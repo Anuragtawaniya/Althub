@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboard.css">
+    <!-- Include Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  
+    <!-- Include jQuery (required by Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <!-- Include Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+</head>
+<body>
+
+  <nav class="flex justify-between">
+    <div class="logo flex items-center">
+      <img src="./Assets/dots-menu 1.svg" class="mr-5" alt="">
+<span class="text-white">SharePoint</span>
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="Search across sites" id="search-input">
+      <!-- <i class="fa fa-search search-icon"></i> -->
+      <img src="./Assets/magnify.svg" class="search-icon" alt="">
+  </div>
+    <div class="settings flex">
+<img src="./Assets/Vector (15).svg" alt="">
+<img src="./Assets/cog-outline.svg" alt="">
+<img src="./Assets/Vector (14).svg" alt="">
+<img src="./Assets/Ellipse 39.png" alt="">
+    </div>
+  </nav>
+  <!-- Sidebar -->
+  <div class="flex sidebar">
+    <div class="w-30 h-screen  text-white  sidebar">
+ 
+
+      <!-- Sidebar Menu -->
+      <ul>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+           <img src="./Assets/Logo.svg" alt="">
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+           <img src="./Assets/home.svg" alt="">
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+          <img src="./Assets/user-circle.svg" alt="">
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+      <img src="./Assets/clipboard-document-list.svg" alt="">
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+      <img src="./Assets/user-group.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+        <div class="dashboard">
+            <h2>Dashboard</h2>
+            </div>
+            
+<div class="text mt-5 mb-5">
+<h2>Welcome, Malik</h2>
+</div>
+
+
+      <h1 class="text-2xl font-semibold">Welcome to My App</h1>
+      <p class="mt-4">This is a sample sidebar layout using Tailwind CSS.</p>
+
+<!-- chart section starts here -->
+<div class="container mx-auto p-6">
+<div class="flex">
+    <div class="chart">
+        <div class="chart-heading">
+            <h2>Project Status</h2>
+            </div>
+            <div id="chartContainer1" style="height: 370px; width: 100%;"></div>
+    </div>
+    <div class="chart">
+        <div class="chart-heading">
+        <h2>Total Revenue</h2>
+        </div>
+        <div id="chartContainer2" style="height: 370px; width: 100%;"></div>
+            </div>
+</div>
+</div>
+<!-- chart section ends here -->
+
+      <div class="container mx-auto p-6">
+        <!-- Main flex container -->
+        <div class="flex flex-col md:flex-row md:space-x-6">
+    
+          <!-- First div containing the table (70%) -->
+          <div class="table">
+            <div class="flex justify-between items-center p-2">
+              <h2 class="text-xl font-semibold mb-4">Task List</h2>
+              <a href="" class="underline">View all</a>
+            </div>
+            
+            <!-- Table wrapped in overflow-x-auto for responsiveness -->
+            <div class="overflow-x-auto">
+              <table class="min-w-full table-auto w-full">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2 border text-left">Task Name</th>
+                    <th class="px-4 py-2 border text-left">Project Name</th>
+                    <th class="px-4 py-2 border text-left">Description</th> <!-- Description column -->
+                    <th class="px-4 py-2 border text-left">Start date</th>
+                    <th class="px-4 py-2 border text-left">End Date</th>
+                    <th class="px-4 py-2 border text-left">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="px-4 py-2 border">Project Approval</td>
+                    <td class="px-4 py-2 border">Alat Hub</td>
+                    <td class="px-4 py-2 border whitespace-nowrap">Figma ipsum component variant main</td> <!-- Prevent wrapping in Description -->
+                    <td class="px-4 py-2 border">12/10/2024</td>
+                    <td class="px-4 py-2 border">31/12/2024</td>
+                    <td class="px-4 py-2 border">Pending Approval</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 border">Project Approval</td>
+                    <td class="px-4 py-2 border">Alat Hub</td>
+                    <td class="px-4 py-2 border whitespace-nowrap">Figma ipsum component variant main</td>
+                    <td class="px-4 py-2 border">12/10/2024</td>
+                    <td class="px-4 py-2 border">31/12/2024</td>
+                    <td class="px-4 py-2 border">Pending Approval</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 border">Project Approval</td>
+                    <td class="px-4 py-2 border">Alat Hub</td>
+                    <td class="px-4 py-2 border whitespace-nowrap">Figma ipsum component variant main</td>
+                    <td class="px-4 py-2 border">12/10/2024</td>
+                    <td class="px-4 py-2 border">31/12/2024</td>
+                    <td class="px-4 py-2 border">Pending Approval</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 border">Project Approval</td>
+                    <td class="px-4 py-2 border">Alat Hub</td>
+                    <td class="px-4 py-2 border whitespace-nowrap">Figma ipsum component variant main</td>
+                    <td class="px-4 py-2 border">12/10/2024</td>
+                    <td class="px-4 py-2 border">31/12/2024</td>
+                    <td class="px-4 py-2 border">Pending Approval</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+    
+          <!-- Second div containing other content (30%) -->
+          <div class="recent ">
+            <div class="flex justify-between items-center p-2">
+                <h2 class="text-xl font-semibold mb-4">Recent Activity</h2>
+                <a href="" class="underline">View all</a>
+            </div>
+            <div class="recent-content flex justify-between items-center">
+<div>
+    <h4>John Smith</h4>
+<p>Applied for 4 days leave next month.</p>
+</div>
+<div>
+    <img src="./Assets/Vector 335 (Stroke).svg" class="mr-5" alt="">
+</div>
+            </div>
+            <div class="recent-content flex justify-between items-center">
+                <div>
+                    <h4>John Smith</h4>
+                <p>Applied for 4 days leave next month.</p>
+                </div>
+                <div>
+                    <img src="./Assets/Vector 335 (Stroke).svg" class="mr-5" alt="">
+                </div>
+                            </div>
+                            <div class="recent-content flex justify-between items-center">
+                                <div>
+                                    <h4>John Smith</h4>
+                                <p>Applied for 4 days leave next month.</p>
+                                </div>
+                                <div>
+                                    <img src="./Assets/Vector 335 (Stroke).svg" class="mr-5" alt="">
+                                </div>
+                                            </div>
+                                            <div class="recent-content flex justify-between items-center">
+                                                <div>
+                                                    <h4>John Smith</h4>
+                                                <p>Applied for 4 days leave next month.</p>
+                                                </div>
+                                                <div>
+                                                    <img src="./Assets/Vector 335 (Stroke).svg" class="mr-5" alt="">
+                                                </div>
+                                                            </div>
+                                                            
+          </div>
+    
+        </div>
+      </div>
+      <div class="container mx-auto p-6">
+
+        <!-- Grid Layout for Three Parent Divs with Equal Heights -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+          <!-- Parent Div 1: News and Announcements -->
+          <div class="flex flex-col h-full bg-white rounded-lg p-6 shadow-lg">
+            <h2 class="text-xl text-black font-semibold">News &amp; Announcements</h2>
+            <div class="mt-4 flex flex-col space-y-4">
+              <!-- Example of news items -->
+              <div class="flex">
+                <div class="news-img">
+                  <img src="https://via.placeholder.com/50" alt="Image" class="w-32 h-32 object-cover rounded-lg">
+                </div>
+                <div class="news-content ml-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">Title of the Post</h3>
+                  <p class="mt-2 text-gray-600">This is a brief description or content about the post.</p>
+                  <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+                </div>
+              </div>
+              
+              <!-- More news items can be added here in similar fashion -->
+              <!-- Example of another news item -->
+              <div class="flex">
+                <div class="news-img">
+                  <img src="https://via.placeholder.com/50" alt="Image" class="w-32 h-32 object-cover rounded-lg">
+                </div>
+                <div class="news-content ml-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">Another Post</h3>
+                  <p class="mt-2 text-gray-600">Description for another post.</p>
+                  <a href="#" class="mt-4 text-blue-500 hover:underline">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Parent Div 2: Voting Section -->
+          <div class="flex flex-col h-full bg-white rounded-lg p-6 shadow-lg">
+            <h2 class="text-xl font-semibold">Alat Hub Rating</h2>
+            <div class="mt-4">
+              <h4>How do you rate Atal Hub?</h4>
+              
+              <!-- Voting Container -->
+              <div class="space-y-4">
+                <!-- Voting Options with Progress Bars -->
+                <div class="space-y-2">
+                  <!-- Option 1 -->
+                  <div class="flex items-center justify-between space-x-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="voteOption" value="0" class="form-radio text-blue-500">
+                      <span class="text-lg">Excellent</span>
+                    </label>
+                    <div class="flex-1 space-x-2 flex items-center justify-between">
+                      <div class="w-full bg-gray-300 rounded-full h-3">
+                        <div id="progressBar0" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+                      </div>
+                      <span id="voteCount0" class="text-lg">0</span>
+                    </div>
+                  </div>
+    
+                  <!-- Option 2 -->
+                  <div class="flex items-center justify-between space-x-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="voteOption" value="1" class="form-radio text-blue-500">
+                      <span class="text-lg">Very Good</span>
+                    </label>
+                    <div class="flex-1 space-x-2 flex items-center justify-between">
+                      <div class="w-full bg-gray-300 rounded-full h-3">
+                        <div id="progressBar1" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+                      </div>
+                      <span id="voteCount1" class="text-lg">0</span>
+                    </div>
+                  </div>
+    
+                  <!-- Option 3 -->
+                  <div class="flex items-center justify-between space-x-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="voteOption" value="2" class="form-radio text-blue-500">
+                      <span class="text-lg">Good</span>
+                    </label>
+                    <div class="flex-1 space-x-2 flex items-center justify-between">
+                      <div class="w-full bg-gray-300 rounded-full h-3">
+                        <div id="progressBar2" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+                      </div>
+                      <span id="voteCount2" class="text-lg">0</span>
+                    </div>
+                  </div>
+    
+                  <!-- Option 4 -->
+                  <div class="flex items-center justify-between space-x-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="voteOption" value="3" class="form-radio text-blue-500">
+                      <span class="text-lg">Fair</span>
+                    </label>
+                    <div class="flex-1 space-x-2 flex items-center justify-between">
+                      <div class="w-full bg-gray-300 rounded-full h-3">
+                        <div id="progressBar3" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+                      </div>
+                      <span id="voteCount3" class="text-lg">0</span>
+                    </div>
+                  </div>
+    
+                  <!-- Option 5 -->
+                  <div class="flex items-center justify-between space-x-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="voteOption" value="4" class="form-radio text-blue-500">
+                      <span class="text-lg">Needs Improvement</span>
+                    </label>
+                    <div class="flex-1 space-x-2 flex items-center justify-between">
+                      <div class="w-full bg-gray-300 rounded-full h-3">
+                        <div id="progressBar4" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+                      </div>
+                      <span id="voteCount4" class="text-lg">0</span>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Vote Button and Total Votes -->
+                <div class="flex items-center justify-between mt-4">
+                  <button onclick="vote()" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Vote</button>
+                  <div class="text-lg font-semibold">
+                    Total Votes: <span id="totalVotes">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Parent Div 3: Card Section -->
+<div class="flex flex-col h-full bg-white rounded-lg p-6 shadow-lg">
+  <h2 class="text-xl font-semibold">Learning & Development</h2>
+  <div class="mt-4 flex flex-wrap justify-between gap-6">
+    <!-- Learning Card 1 -->
+    <div class="learning-cards bg-white rounded-lg overflow-hidden shadow-lg flex flex-col w-full sm:w-1/2 lg:w-1/3">
+      <img src="./Assets/image.png" alt="Course Image" class="w-full h-48 object-cover rounded-t-lg">
+      <div class="learning-content p-3 flex-grow bg-gray-800 rounded-b-lg">
+        <h2 class="text-white text-lg font-semibold">Course Title</h2>
+        <p class="text-white">Starting from 28/10/24</p>
+      </div>
+    </div>
+
+    <!-- Learning Card 2 -->
+    <div class="learning-cards bg-white rounded-lg overflow-hidden shadow-lg flex flex-col w-full sm:w-1/2 lg:w-1/3">
+      <img src="./Assets/image.png" alt="Course Image" class="w-full h-48 object-cover rounded-t-lg">
+      <div class="learning-content p-3 flex-grow bg-gray-800 rounded-b-lg">
+        <h2 class="text-white text-lg font-semibold">Course Title</h2>
+        <p class="text-white">Starting from 28/10/24</p>
+      </div>
+    </div>
+
+    <!-- You can add more cards here -->
+  </div>
+</div>
+
+        </div>
+    
+      </div>
+    </div>
+    <!-- main container ends here -->
+    
+  </div>
+
+
+
+  <script>
+ window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer1", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: ""
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+
+}
+
+
+
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer2", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: ""
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+
+}
+
+  </script>
+  
+   <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

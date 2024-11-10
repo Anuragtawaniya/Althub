@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dashboard{
+    background: #FFFFFF;
+    margin: 0 !important;
+    box-shadow: 1px 1px 5px 0px #1A1A1A1A;
+padding: 10px;
+
+}
+
+table td:nth-child(3), table th:nth-child(3) {
+    white-space: nowrap; 
+    overflow: hidden;   
+    text-overflow: ellipsis; 
+  }
+  
+td, th {
+    border: none; 
+    padding: 8px;
+  }
+  tr:nth-child(even) td {
+    background-color: rgba(4, 162, 236, 0.5);
+    color: white; 
+  }
+  .learning-cards{
+    width: 45%;
+    height: 200px;
+
+  }
+  .learning-cards img{
+    height: 150px;
+  }
+  .learning-content{
+    background: #02518C;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
+  .learning-content p{
+    font-size: 13px;
+  }
+  .table{
+    width: 70%;
+    box-shadow: 1px 1px 5px 0px #1A1A1A1A;
+  
+    border-radius: 10px;
+
+  }
+  .recent{
+    width: 30%;
+    box-shadow: 1px 1px 5px 0px #1A1A1A1A;
+    padding: 10px;
+    border-radius: 10px;
+
+  }
+  .recent-content{
+    border-top: 1px solid #EDEDED;
+    margin: 10px 0;
+  }
+table th{
+    background: #EDEDED;
+
+}
+.chart{
+    width: 50%;
+    margin: 0 10px;
+    padding: 5px;
+}
+.chart-heading{
+    background: #FFFFFF;
+    
+
+}

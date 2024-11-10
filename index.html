@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+  
+</head>
+<body>
+
+  <nav class="flex justify-between">
+    <div class="logo flex items-center">
+      <img src="./Assets/dots-menu 1.svg" class="mr-5" alt="">
+<span class="text-white">SharePoint</span>
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="Search across sites" id="search-input">
+      <img src="./Assets/magnify.svg" class="search-icon" alt="">
+  </div>
+    <div class="settings flex">
+<img src="./Assets/Vector (15).svg" alt="">
+<img src="./Assets/cog-outline.svg" alt="">
+<img src="./Assets/Vector (14).svg" alt="">
+<img src="./Assets/Ellipse 39.png" alt="">
+
+    </div>
+<div>
+  <button class="toggle-button" onclick="toggleSidebar()">
+    <span class="hamburger-icon">&#9776;</span> 
+    <span class="close-icon">&times;</span>       
+  </button>  
+</div>
+    
+  </nav>
+  <!-- Sidebar -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <div class="sidebar w-30 h-screen text-white" id="sidebar">
+      <!-- Sidebar Menu -->
+      <ul>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+            <img src="./Assets/Logo.svg" alt="" title="Home" class="icon">
+            <span class="tooltip">Home</span>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+            <img src="./Assets/home.svg" class="icon" alt="">
+            <span class="tooltip">My Home</span>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+            <img src="./Assets/tv.svg" class="icon" alt="">
+            <span class="tooltip">Departments</span>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+            <img src="./Assets/internet.svg" class="icon" alt="">
+            <span class="tooltip">Employee Directory</span>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+            <img src="./Assets/user-circle.svg" class="icon" alt="">
+            <span class="tooltip">Documents</span>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+            <!-- Icon -->
+            <img src="./Assets/clipboard-document-list.svg" class="icon" alt="">
+            <span class="tooltip">Creative Hub</span>
+          </a>
+        </li>
+        <li class="mb-4 mt-100">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500" id="dark-mode-toggle">
+            <!-- Icon -->
+            <img src="./Assets/Light/Light.svg" class="icon" alt="">
+          </a>
+        </li>
+        <div class="menu-close">
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </div>
+      </ul>
+      <div class="menu-close">
+        <i class="fa-solid fa-xmark" onclick="toggleSidebar()"></i>
+      </div>
+    </div>
+    
+    <!-- Toggle Button (Hamburger Icon) -->
+
+<div>
+    <button class="toggle-button" onclick="toggleSidebar()">
+      <span class="icon"></span>
+    </button>
+  </div>
+  
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+<!-- slider start here -->
+<div class="hero-slider  p-4">
+  <div class="hero-slider-content">
+    <div class="hero-slide">
+<div class="hero-content">
+  <div class="hero-left">
+    <div class="hero-slide-logo">
+    <img src="./Assets/hero-logo.svg" alt="">
+    </div>
+    <div class="hero-slide-text mt-5">
+    <h2 class="mt-3">Message from our CEO</h2>
+    <p class="mt-3">Welcome to Alat Hub. We're excited to have you here. Discover how our innovative  solutions can help you solve a problem or achieve a goal.</p>
+      <a href=""class="mt-3">Read more</a>
+    </div>
+    </div>
+    <div class="hero-right">
+    <img src="./Assets/hero-slider-img.png" alt="">
+    </div>
+</div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="hero-slide-logo">
+          <img src="./Assets/hero-logo.svg" alt="">
+          </div>
+          <div class="hero-slide-text mt-5">
+          <h2 class="mt-3">Message from our CEO</h2>
+          <p class="mt-3">Welcome to Alat Hub. We're excited to have you here. Discover how our innovative  solutions can help you solve a problem or achieve a goal.</p>
+            <a href=""class="mt-3">Read more</a>
+          </div>
+          </div>
+          <div class="hero-right">
+          <img src="./Assets/hero-slider-img.png" alt="">
+          </div>
+      </div>
+          </div>
+      
+    
+  </div>
+  </div>
+
+
+<!-- tabs start here -->
+<div class="slider-main  p-4">
+<div class="slider-content">
+  <div class="slider-text">
+    <a href="">Quick Links</a>
+  </div>
+  <div class="your-slider">
+    <div><a href="" class="slider-tab">Policy & Processes Hub</a></div>
+    <div><a href="" class="slider-tab">Video Hub</a></div>
+    <div><a href="" class="slider-tab">Expense Claims</a></div>
+    <div><a href="" class="slider-tab">Finance Service Delivery</a></div>
+    <div><a href="" class="slider-tab">My IT Assets</a></div>
+    <div><a href="" class="slider-tab">Leave Requests</a></div>
+    <div><a href="" class="slider-tab">Referral Portal</a></div>
+    <div><a href="" class="slider-tab">HR Onboarding</a></div>
+
+    
+  </div>
+</div>
+</div>
+<!-- tabs ends here -->
+
+
+  <!-- Container for Grid -->
+
+
+  
+      <div class="container mx-auto p-4">
+  
+     
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Grid Items -->
+          <div class="text-white h-48  rounded-lg shadow-md card-1">
+            <div class="card-content p-5">
+<h2>Employee Directory</h2>
+<p class="w-38">Learn More About your colleagues and grow your network</p>
+<div class="arrow flex justify-end">
+  <img src="./Assets/arrow-small-right.svg" alt="">
+      </div>
+            </div>
+            <img src="./Assets/Rectangle.png" class="rectangle" alt="" >
+          </div>
+          <div class="text-white  rounded-lg shadow-md card-2">
+            <div class="card-content pr-5 pl-5">
+<h1 class="text-black">New Joiners</h1>
+<p class="text-black w-64">Welcome your new team members 
+  and learn more about them.</p>
+  <div class="arrow flex justify-end">
+    <img src="./Assets/ocean-arrow.svg" alt="">
+        </div>
+            </div>
+          </div>
+          <div class="text-white h-48  rounded-lg shadow-md card-3">
+       
+       
+          </div>
+          <div class="text-white h-48  rounded-lg shadow-md card-4">
+            <div class="card-content p-5">
+<h2>Holidays</h2>
+<p class="w-38">Plan your meetings in advance with the help of upcoming holidays.</p>
+<div class="arrow flex justify-end">
+  <img src="./Assets/arrow-small-right.svg" alt="">
+      </div>
+            </div>
+
+          </div>
+<div class="text-white h-48  rounded-lg shadow-md card-5">
+            <div class="card-content p-5">
+<h2>Employee of the Month</h2>
+<p class="w-38">Congratulate your team member for their outstanding performance.</p>
+<div class="arrow flex justify-end">
+  <img src="./Assets/arrow-small-right.svg" alt="">
+      </div>
+  
+      <img src="./Assets/Group 1302.svg" class="element" alt="">
+   
+            </div>
+       
+          </div>
+          <div class="text-white h-48  rounded-lg shadow-md card-6">
+            <div class="card-content p-5">
+              
+<h2>Employee Directory</h2>
+<p class="w-38">Learn More About your colleagues and grow your network</p>
+
+
+
+<div class="arrow flex justify-end">
+  <img src="./Assets/arrow-small-right.svg" alt="">
+      </div>
+    
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+<div class="container mx-auto p-4">
+
+
+  <!-- Main Layout -->
+ <!-- Dark Mode Toggle Button -->
+
+ <div class="flex flex-col md:flex-row gap-6">
+
+  <!-- Main Content (65% on medium and larger screens) -->
+  <div class="flex-1 md:basis-[65%] p-6 rounded-lg shadow-lg">
+    
+      <div class="creative-hub-heading">
+          <h1 class="font-bold">Creative Hub</h1>
+      </div>
+
+      <!-- Grid Container for Creative Hub -->
+      <div id="creative-hub" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4 creative-hub">
+          <!-- Grid Item 1 -->
+      <!-- Grid Item 1 -->
+      <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 17.svg" alt="Image 1" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Alat Brand Guidelines</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 2 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 13.svg" alt="Image 2" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Teams Background</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 3 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 11.svg" alt="Image 3" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">PowerPoint Templates</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 4 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 12.svg" alt="Image 4" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Email Signatures</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 5 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 9.svg" alt="Image 5" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Alat Images</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 6 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 14.svg" alt="Image 6" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Alat Logos</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 7 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 15.svg" alt="Image 7" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Alat Fonts</h4>
+        </div>
+    </div>
+
+    <!-- Grid Item 8 -->
+    <div class="flex items-center bg-white p-4 rounded-lg ">
+        <img src="./Assets/image 16.svg" alt="Image 8" class="w-12 h-12 mr-4 object-cover">
+        <div>
+            <h4 class="text-lg font-semibold text-gray-800">Word Templates</h4>
+        </div>
+    </div>
+          
+          <!-- Add other grid items in the same format -->
+      </div>
+  </div>
+
+  <!-- Sidebar (Remaining 35% on medium and larger screens) -->
+  <div class="flex-1 md:basis-[30%] p-6 rounded-lg shadow-lg recent-main">
+      <div class="recent">
+          <div class="flex justify-between items-center p-2">
+              <h2 class="text-xl font-semibold mb-4">Location & Time</h2>
+          </div>
+
+          <!-- Location Items -->
+          <div class="location flex justify-between items-center">
+              <div>
+                  <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+                  <p>CURRENT LOCATION</p>
+              </div>
+              <div>
+                  <p>4:21 <span class="font-bold">PM</span></p>
+              </div>
+          </div>
+
+          <div class="location flex justify-between items-center">
+            <div>
+                <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+                <p>CURRENT LOCATION</p>
+            </div>
+            <div>
+                <p>4:21 <span class="font-bold">PM</span></p>
+            </div>
+        </div>
+
+        <div class="location flex justify-between items-center">
+          <div>
+              <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+              <p>CURRENT LOCATION</p>
+          </div>
+          <div>
+              <p>4:21 <span class="font-bold">PM</span></p>
+          </div>
+      </div>
+
+      <div class="location flex justify-between items-center">
+        <div>
+            <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+            <p>CURRENT LOCATION</p>
+        </div>
+        <div>
+            <p>4:21 <span class="font-bold">PM</span></p>
+        </div>
+    </div>
+
+
+          <!-- Add other location items in the same format -->
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+  <!-- Main Container -->
+  <div class="container mx-auto p-4">
+
+    <!-- Grid or Flex Container for Three Parent Divs -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Parent Div 1 -->
+      <div class="text-white rounded-lg p-6 shadow-lg news">
+        <h2 class="text-xl text-black font-semibold dark-text">News & Announcements</h2>
+        <div class="mt-4">
+         
+        
+          <div class="news-ann flex">
+            <div class="news-img">
+              <img src="./Assets/image (2).png" alt="Image" >
+             </div>
+            
+              <div class="news-content">
+                <h2 class="text-2xl font-semibold text-gray-800">Lorem ipsum dolor sit amet, orum.</h2>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur 
+                  adipiscing elit, sed do eiusmod tempor...</p>
+                <a href="#" class="underline">Read More</a>
+              </div>
+          
+          </div>
+          
+          <div class="news-ann flex">
+            <div class="news-img">
+              <img src="./Assets/image (2).png" alt="Image" >
+             </div>
+            
+             <div class="news-content">
+              <h2 class="text-2xl font-semibold text-gray-800">Lorem ipsum dolor sit amet, orum.</h2>
+              <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor...</p>
+              <a href="#" class="underline">Read More</a>
+            </div>
+          
+          </div>
+          <div class="news-ann flex">
+            <div class="news-img">
+              <img src="./Assets/image (2).png" alt="Image" >
+             </div>
+            
+             <div class="news-content">
+              <h2 class="text-2xl font-semibold text-gray-800">Lorem ipsum dolor sit amet, orum.</h2>
+              <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor...</p>
+              <a href="#" class="underline">Read More</a>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- Parent Div 2 -->
+      <div class="text-black rounded-lg p-6 shadow-lg">
+        <h2 class="text-xl font-semibold dark-text">Alat Hub rating</h2>
+        <div class="mt-4">
+         <h4 class="dark-text">How do you rate Atal Hub?</h4>
+  <!-- Voting Container -->
+  <div class="max-w-4xl mx-auto space-y-4">
+
+    
+    <!-- Voting Options -->
+    <div class="space-y-4">
+      <div class="flex items-center space-x-4">
+        <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
+          <input type="radio" name="voteOption" value="0" class="custom-radio">
+          <span class="text-lg dark-text">Excellent</span>
+        </label>
+        <div class="flex-1 flex items-center justify-end space-x-4">
+          <div class="w-full bg-gray-300 rounded-full h-3 progress">
+            <div id="progressBar0" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+          </div>
+          <span id="voteCount0" class="text-lg dark-text">0</span>
+        </div>
+      </div>
+    
+      <div class="flex items-center space-x-4">
+        <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
+          <input type="radio" name="voteOption" value="1" class="custom-radio">
+          <span class="text-lg dark-text">Very Good</span>
+        </label>
+        <div class="flex-1 flex items-center justify-end space-x-4">
+          <div class="w-full bg-gray-300 rounded-full h-3 progress">
+            <div id="progressBar1" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+          </div>
+          <span id="voteCount1" class="text-lg dark-text">0</span>
+        </div>
+      </div>
+    
+      <div class="flex items-center space-x-4">
+        <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
+          <input type="radio" name="voteOption" value="2" class="custom-radio">
+          <span class="text-lg dark-text">Good</span>
+        </label>
+        <div class="flex-1 flex items-center justify-end space-x-4">
+          <div class="w-full bg-gray-300 rounded-full h-3 progress">
+            <div id="progressBar2" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+          </div>
+          <span id="voteCount2" class="text-lg dark-text">0</span>
+        </div>
+      </div>
+    
+      <div class="flex items-center space-x-4">
+        <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
+          <input type="radio" name="voteOption" value="3" class="custom-radio">
+          <span class="text-lg dark-text">Fair</span>
+        </label>
+        <div class="flex-1 flex items-center justify-end space-x-4">
+          <div class="w-full bg-gray-300 rounded-full h-3 progress">
+            <div id="progressBar3" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+          </div>
+          <span id="voteCount3" class="text-lg dark-text">0</span>
+        </div>
+      </div>
+    
+      <div class="flex items-center space-x-4">
+        <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
+          <input type="radio" name="voteOption" value="4" class="custom-radio">
+          <span class="text-lg dark-text">Needs Improvement</span>
+        </label>
+        <div class="flex-1 flex items-center justify-end space-x-4">
+          <div class="w-full bg-gray-300 rounded-full h-3 progress">
+            <div id="progressBar4" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
+          </div>
+          <span id="voteCount4" class="text-lg dark-text">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vote Button and Total Votes -->
+    <div class="flex items-center justify-between mt-4">
+      <button onclick="vote()" class=" text-white px-6 py-2 rounded-md hover:bg-blue-600">Vote</button>
+      <div class="text-lg font-semibold dark-text
+      ">
+        Total Votes: <span id="totalVotes dark-text">0</span>
+      </div>
+    </div>
+  </div>
+
+        </div>
+      </div>
+
+      <!-- section 4 sub section 3 -->
+      <div class=" text-white rounded-lg p-6 shadow-lg support">
+        <h2 class="text-xl font-semibold text-black dark-text">Alat Hub rating</h2>
+        <div class="mt-4">
+          <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-lg support-card">
+            <!-- Left side: SVG icon and text -->
+            <div class="flex items-center space-x-2">
+              <!-- SVG Icon -->
+          <img src="./Assets/IT.svg" alt="">
+              <!-- Text -->
+              <span class="text-lg font-semibold text-gray-800 dark-text">IT Support</span>
+            </div>
+          
+            <!-- Right side: Arrow button -->
+            <a href="">
+              <img src="./Assets/chevron-right.svg" alt="">
+             </a>
+          </div>
+          <!-- card-2 -->
+          <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-lg  support-card">
+            <!-- Left side: SVG icon and text -->
+            <div class="flex items-center space-x-2">
+              <!-- SVG Icon -->
+              <img src="./Assets/Vector.svg" alt="">
+              <!-- Text -->
+              <span class="text-lg font-semibold text-gray-800 dark-text">IT Infrastructure</span>
+            </div>
+          
+            <!-- Right side: Arrow button -->
+            <a href="">
+              <img src="./Assets/chevron-right.svg" alt="">
+             </a>
+          </div>
+              <!-- card-3 -->
+              <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-lg support-card">
+                <!-- Left side: SVG icon and text -->
+                <div class="flex items-center space-x-2">
+                  <!-- SVG Icon -->
+                  <img src="./Assets/Vector-1.svg" alt="">
+                  <!-- Text -->
+                  <span class="text-lg font-semibold text-gray-800 dark-text">Cyber Securuty</span>
+                </div>
+              
+                <!-- Right side: Arrow button -->
+       <a href="">
+        <img src="./Assets/chevron-right.svg" alt="">
+       </a>
+              </div>
+                      <!-- card-4 -->
+                      <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-lg support-card">
+                        <!-- Left side: SVG icon and text -->
+                        <div class="flex items-center space-x-2">
+                          <!-- SVG Icon -->
+                          <img src="./Assets/Vector-2.svg" alt="">
+                          <!-- Text -->
+                          <span class="text-lg font-semibold text-gray-800 dark-text">Remote Support</span>
+                        </div>
+                      
+                        <!-- Right side: Arrow button -->
+                        <a href="">
+                          <img src="./Assets/chevron-right.svg" alt="">
+                         </a>
+                      </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+
+    </div>
+    
+  </div>
+ 
+
+
+  <!-- Slick Slider JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+$(document).ready(function() {
+  // Initialize Slick slider with default settings
+  var $slider = $('.your-slider').slick({
+    infinite: false,
+    slidesToShow: 4,  // Default slides to show
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="./Assets/leftarrow.svg" alt="Prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./Assets/rightarrow.svg" alt="Next"></button>',
+  });
+
+  // Function to update the slider settings based on screen width
+  function updateSliderSettings() {
+    var windowWidth = $(window).width();
+
+    if (windowWidth <= 996) {
+      // Update slidesToShow for smaller screens (<= 996px)
+      $slider.slick('slickSetOption', 'slidesToShow', 1, true);  // Show 2 slides at a time
+    } else {
+      // Reset slidesToShow for larger screens (> 996px)
+      $slider.slick('slickSetOption', 'slidesToShow', 4, true);  // Show 4 slides at a time
+    }
+  }
+
+  // Run the function on page load
+  updateSliderSettings();
+
+  // Listen for window resizing and update slider settings accordingly
+  $(window).resize(function() {
+    updateSliderSettings();
+  });
+});
+
+  </script>
+    <script>
+      $(document).ready(function(){
+        $('.hero-slider-content').slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots:true,
+          arrows:false,
+        });
+      });
+    </script>
+    <script>
+    document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+    function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const toggleButton = document.querySelector('.toggle-button');
+
+
+  sidebar.classList.toggle('sidebar-open');
+
+
+  toggleButton.classList.toggle('close');
+}
+
+
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Slider Example</title>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <style>
+    .your-slider {
+      width: 80%;
+      margin: auto;
+    }
+    .your-slider img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slick Slider HTML -->
+  <div class="your-slider">
+    <div><img src="https://via.placeholder.com/600x400?text=Slide+1" alt="Slide 1"></div>
+    <div><img src="https://via.placeholder.com/600x400?text=Slide+2" alt="Slide 2"></div>
+    <div><img src="https://via.placeholder.com/600x400?text=Slide+3" alt="Slide 3"></div>
+  </div>
+
+  <!-- Slick Slider JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.your-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots:true,
+      });
+    });
+  </script>
+
+</body>
+</html>

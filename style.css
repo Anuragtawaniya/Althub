@@ -1,0 +1,724 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #00141E;
+padding: 10px;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+}
+.sidebar ul{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #00000014;
+    margin: 0 !important;
+    width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+
+
+}
+
+.hide {
+    display: none;
+    transform: 0.5 all;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: #05283A;
+  }
+.settings img{
+    margin: 0 10px !important;
+}
+.sidebar ul li{
+    margin: 20px 0;
+    padding: 10px;
+}
+/* .sidebar ul li:hover{
+    background: #09DAC5;
+padding: 5px;
+border-radius: 5px;
+} */
+ .card-content{
+    position: relative;
+ }
+ .card-5 .card-content  h2{
+    color: #05283A;
+font-size: 25px;
+ }
+ .card-5 .card-content p{
+   color: #05283A;
+font-size: 16px;
+font-weight: 400;
+ }
+.card-1{
+    background: #808080;
+    position: relative;
+}
+.card-1 img{
+position: absolute;
+bottom: 0;
+width: 100px;
+}
+.card-1 .arrow{
+    position: absolute;
+    bottom: -60%;
+width: 40px;
+    }
+.card-2{
+    background: url('./Assets/Rectangle 214.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 192px;
+}
+.card-2 .arrow{
+   
+        position: absolute;
+        bottom: -30px;
+        right: 10px;
+
+        
+    
+}
+.card-2 .card-content{
+    position: relative;
+    top: 80px;
+}
+.card-3{
+    background: url('./Assets/card-3.png');
+    background-repeat: no-repeat;
+    background-size: 105% 105%;
+}
+.card-4{
+    background: url('./Assets/Rectangle\ 213.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-4 img{
+    position: relative;
+    bottom: -39px;
+}
+.card-5{
+    background: #09DAC5;
+
+}
+.card-5 .arrow {
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+}
+.card-6{
+    position: relative;
+    background: #02518C;
+}
+.card-6 img{
+
+        position: relative;
+        bottom: -80px;
+    
+}
+.card-6 .element{
+   position: absolute;
+   top: 0;
+   width: 80%;
+}
+
+    .arrow {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+.element{
+    position: absolute;
+    right: 2px;
+    bottom: -65px;
+   
+}
+
+/* Basic styles for the search container */
+.search-container {
+    position: relative;
+    width: 400px; /* Adjust the width as needed */
+    border-radius: 5px;
+}
+
+/* Style for the input field */
+#search-input {
+    width: 100%;
+    padding: 10px 40px 10px 40px; /* Adds space for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the search icon */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    pointer-events: none; /* Makes sure the icon doesn't interfere with the input field */
+}
+.creative-hub div{
+width: 184px;
+height: 80px;
+
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #EBF1F6;
+
+}
+.creative-hub div h4{
+   color: #05283A;
+   font-size: 16px;
+
+}
+.creative-hub div img {
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #1A1A1A1A;
+}
+.news-ann{
+    margin: 10px 0;
+}
+.news-ann .news-content{
+    margin: 0 20px;
+}
+.creative-hub-heading{
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.news-content h2{
+    font-size: 14px;
+    color: #02518C;
+    
+}
+.news-content p{
+    font-size: 15px;
+    color: #05283A;
+}
+.news-content a{
+    color: #05283A;
+    font-size: 13px;
+}
+.support .support-card{
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #e7e7e7;
+    background: none;
+    box-shadow: none;
+}
+.support .support-card span{
+font-size: 16px;
+color: #05283A;
+}
+.news h2{
+    margin: 10px 0;
+}
+/* location and time starts here */
+.location{
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+
+    width: 100% !important;  
+
+}
+.recent{
+    background: url('./Assets/maps.png');
+    padding: 10px;
+}
+
+.location h2{
+    color: #05283A;
+font-size: 16px;
+
+}
+.progress{
+    width: 40% !important;
+    margin-left: 50px !important;
+}
+.custom-radio {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: 2px solid #05283A;
+    background-color: white;
+    transition: background-color 0.3s, border-color 0.3s; 
+    flex-shrink: 0; 
+}
+  /* Styling for the checked state */
+  .custom-radio:checked {
+    background-color: #05283A; 
+    border-color: #05283A; 
+  }
+.location p{
+    color: #80898C;
+    font-size: 14px;
+
+}
+.location{
+    border-top: 2px solid #e7e7e7;
+    width: 300px;
+}
+.location:nth-child(3){
+    background: #EBF1F6;
+}
+.location:nth-child(5){
+    background: #EBF1F6;
+}
+/* location and time ends here */
+.slider-main{
+    width: 1280px !important;
+}
+.hero-slider{
+    width: 1280px !important;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero-slider-content{
+    width: 100% !important;
+ 
+}
+.hero-slider .slick-dots{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: no-repeat;
+    box-shadow: none;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+.hero-slider .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+    font-size: 10px;
+}
+.hero-slider button{
+    display: none;
+}
+.hero-slide{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.hero-slide-text h2{
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 500;
+
+}
+.hero-slide-text p{
+    font-size: 15px;
+    color: #FFFFFF;
+
+}
+.hero-slide-text a{
+    font-size: 15px;
+    color: #FFFFFF;
+
+}
+.hero-left{
+    width: 40%;
+}
+.hero-right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right img{
+    width: 60%;
+}
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-slider ul,.slick-dots{
+    background: none;
+}
+.hero-slider-content {
+    width: 100% !important;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.hero-slider{
+    background: #02518C;
+}
+.hero-content{
+    width: 100%;
+}
+.your-slider {
+    width: 80% !important;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+  .your-slider .slider-tab {
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+    background: #EDEDED;
+    padding: 10px;
+    border-radius: 10px !important;
+    margin: 0 !important;
+  }
+ .your-slider .slick-slide {
+    width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+ }
+  .slider-content{
+display: flex;
+    box-shadow: 1px 1px 5px 0px #1A1A1A1A;
+    border-radius: 10px;
+
+  }
+ .slider-text{
+   
+    width: 30%;
+    display: flex;
+    align-items: center;
+   padding: 0 10px;
+  }
+.slider-tab a{
+ color: #05283A;
+ font-size: 14px;
+
+}
+
+
+.your-slider .slider-tab{
+    display: inline-block;
+    background: #EDEDED;
+padding: 10px;
+border-radius: 10px !important;
+}
+  .slick-prev, .slick-next {
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+  }
+  .harburger{
+    display: none;
+  }
+@media(max-width:765px){
+    .creative-hub div{
+width: auto;
+    }
+   
+    .settings{
+        display: none !important;
+    }
+    #search-input{
+display: none !important;
+    }
+}
+
+
+
+.slick-prev {
+    left: -25px !important;
+    top: 15px !important;
+}
+.slick-next {
+    right: 20px !important;
+    top: 15px !important;
+}
+/* Styling for the toggle button */
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Ensure it stays above the sidebar */
+  }
+  
+  
+  
+  /* Close icon lines */
+  .toggle-button.close .icon::before {
+    transform: rotate(45deg) translateY(0);
+  }
+  
+  .toggle-button.close .icon::after {
+    transform: rotate(-45deg) translateY(0);
+  }
+  
+@media(max-width:996px){
+    html,body{
+        overflow-x: auto;
+    }
+    /* Sidebar */
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0; /* Hidden by default */
+    background-color: blueviolet;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+  
+  .sidebar-open {
+    width: 100px; /* Width when open */
+  }
+  
+  /* Toggle Button */
+  .toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .hamburger-icon {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+  }
+  .close-icon{
+    display: inline-block;
+    color: #000;
+    font-size: 2rem;
+  }
+  
+  
+  .close-icon {
+    display: none; 
+  }
+  
+  .toggle-button.close .hamburger-icon {
+    display: none; 
+  }
+  
+  .toggle-button.close .close-icon {
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    right: -15px;
+  }
+  
+    .slider-main {
+        width: 90vw !important;
+    }
+    .hero-slider{
+        width: 90vw !important;
+        height: 460px;
+    }
+    .hero-content{
+        flex-direction: column;
+    }
+    .hero-left{
+        width: 100%;
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .creative-hub div {
+        width: 100%;
+    }
+    .card-4 img {
+        position: relative;
+        bottom: 0;
+    }
+    .card-6 img{
+        position: relative;
+        bottom: -40px;
+    }
+    .harburger{
+        display: block;
+      }
+      .harburger i{
+        font-size: 20px;
+        color: #fff;
+      }
+      .menu-close{
+        display: block;
+        position: absolute;
+    right: 5%;
+    top: 5%;
+      }
+      .menu-close i{
+        font-size: 20px;
+      }
+    
+}
+
+
+/* dark theme */
+
+body,html{
+    background: #fff !important;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.dark-mode .dark-text{
+    color: #fff !important;
+}
+  #dark-mode-toggle {
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .dark-mode #dark-mode-toggle {
+    /* background-color: #333; */
+    color: #f0f0f0;
+  }
+  .dark-mode .news-content h2, .dark-mode .news-content p,.dark-mode .news-content a{
+    color: #fff;
+  }
+   .dark-mode .sidebar, .dark-mode .card,.dark-mode .support-card ,.dark-mode .location,.dark-mode .your-slider .slider-tab {
+    background-color: #1e1e1e;
+    border: none;
+}
+.dark-mode h1{
+    color: #fff;
+}
+.dark-mode .creative-hub-heading{
+    background: none;
+}
+.dark-mode #creative-hub div{
+    background: none;
+    color: #fff;
+}
+.dark-mode #creative-hub h4{
+    background: none;
+    color: #fff;
+}
+
+.text-black {
+    color: #ffffff; /* Change black text to white in dark mode */
+}
+
+.bg-gray-800 {
+    background-color: #1e1e1e; /* Dark background for gray elements */
+}
+
+.bg-white {
+    background-color: #2c2c2c; /* Dark background for white elements */
+}
+/* Default card content styling */
+.card-content {
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    padding: 1rem; /* Adjust padding as needed */
+  }
+  
+  /* Hover effect for card content */
+  .card-1:hover,
+  .card-2:hover,
+  .card-4:hover,
+  .card-5:hover,
+  .card-6:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #09DAC5;
+  }
+  
+
+  .card-1:hover .rectangle,
+  .card-2:hover .rectangle,
+  .card-4:hover .rectangle,
+  .card-5:hover .rectangle,
+  .card-6:hover .rectangle {
+    transform: scale(1.05); 
+  }
+  
+
+/* Adjust other elements as needed */
+/* dark theme */
+
+
+/* Sidebar Image and Tooltip Styling */
+.sidebar .flex {
+    position: relative; /* Needed for absolute positioning of the tooltip */
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 100%; /* Position above the icon */
+    transform: translateX(-50%);
+    background-color: #333; /* Dark background for tooltip */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Smooth fade in */
+  }
+  
+  .icon {
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px;
+  }
+  
+  .sidebar .flex:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Make the tooltip visible */
+  }
+  
+  .sidebar .flex:hover .icon {
+    filter: brightness(1.2); /* Optional: Brighten the icon on hover */
+  }
+  
+  .menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
