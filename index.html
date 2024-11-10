@@ -12,10 +12,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+  <link href="https://fonts.googleapis.com/css2?family=Karbon:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
   
 </head>
-<body>
+<body class="bg-white text-black">
 
   <nav class="flex justify-between">
     <div class="logo flex items-center">
@@ -33,7 +34,7 @@
 <img src="./Assets/Ellipse 39.png" alt="">
 
     </div>
-<div>
+<div class="nav-btn">
   <button class="toggle-button" onclick="toggleSidebar()">
     <span class="hamburger-icon">&#9776;</span> 
     <span class="close-icon">&times;</span>       
@@ -48,14 +49,14 @@
       <!-- Sidebar Menu -->
       <ul>
         <li class="mb-4">
-          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500 ">
             <!-- Icon -->
-            <img src="./Assets/Logo.svg" alt="" title="Home" class="icon">
+            <img src="./Assets/Logo.svg" alt="" title="Home" class="icon" id="logo">
             <span class="tooltip">Home</span>
           </a>
         </li>
         <li class="mb-4">
-          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500">
+          <a href="#" class="flex items-center space-x-3 text-white hover:text-indigo-500 active-bg">
             <!-- Icon -->
             <img src="./Assets/home.svg" class="icon" alt="">
             <span class="tooltip">My Home</span>
@@ -103,7 +104,8 @@
         <i class="fa-solid fa-xmark" onclick="toggleSidebar()"></i>
       </div>
     </div>
-    
+
+
     <!-- Toggle Button (Hamburger Icon) -->
 
 <div>
@@ -116,46 +118,51 @@
     <!-- Main Content -->
     <div class="flex-1 p-6">
 <!-- slider start here -->
-<div class="hero-slider  p-4">
-  <div class="hero-slider-content">
-    <div class="hero-slide">
-<div class="hero-content">
-  <div class="hero-left">
-    <div class="hero-slide-logo">
-    <img src="./Assets/hero-logo.svg" alt="">
-    </div>
-    <div class="hero-slide-text mt-5">
-    <h2 class="mt-3">Message from our CEO</h2>
-    <p class="mt-3">Welcome to Alat Hub. We're excited to have you here. Discover how our innovative  solutions can help you solve a problem or achieve a goal.</p>
-      <a href=""class="mt-3">Read more</a>
-    </div>
-    </div>
-    <div class="hero-right">
-    <img src="./Assets/hero-slider-img.png" alt="">
-    </div>
-</div>
-    </div>
-    <div class="hero-slide">
-      <div class="hero-content">
-        <div class="hero-left">
-          <div class="hero-slide-logo">
-          <img src="./Assets/hero-logo.svg" alt="">
-          </div>
-          <div class="hero-slide-text mt-5">
-          <h2 class="mt-3">Message from our CEO</h2>
-          <p class="mt-3">Welcome to Alat Hub. We're excited to have you here. Discover how our innovative  solutions can help you solve a problem or achieve a goal.</p>
-            <a href=""class="mt-3">Read more</a>
-          </div>
-          </div>
-          <div class="hero-right">
-          <img src="./Assets/hero-slider-img.png" alt="">
-          </div>
-      </div>
-          </div>
+<div class="container mx-auto p-4 container-bg">
+  <div class="hero-slider  p-4">
+    <div class="hero-slider-content">
+     
       
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div class="hero-left">
+            <div class="hero-slide-logo">
+            <img src="./Assets/hero-logo.svg" alt="">
+            </div>
+            <div class="hero-slide-text mt-5">
+            <h2 class="mt-3">Message from our CEO</h2>
+            <p class="mt-3">Welcome to Alat Hub. We're excited to have you here. Discover how our innovative  solutions can help you solve a problem or achieve a goal.</p>
+              <a href=""class="mt-5 underline">Read more</a>
+            </div>
+            </div>
+            <div class="hero-right">
+            <img src="./Assets/CEO.svg" alt="">
+            </div>
+        </div>
+            </div>
+       
+            <div class="hero-slide">
+              <div class="hero-content">
+                <div class="hero-left">
+                  <div class="hero-slide-logo">
+                  <img src="./Assets/hero-logo.svg" alt="">
+                  </div>
+                  <div class="hero-slide-text mt-5">
+                  <h2 class="mt-3">Message from our CEO</h2>
+                  <p class="mt-3">Welcome to Alat Hub. We're excited to have you here. Discover how our innovative  solutions can help you solve a problem or achieve a goal.</p>
+                    <a href=""class="mt-5 underline ">Read more</a>
+                  </div>
+                  </div>
+                  <div class="hero-right">
+                  <img src="./Assets/CEO.svg" alt="">
+                  </div>
+              </div>
+                  </div>
+    </div>
+    </div>
+  
+</div>
     
-  </div>
-  </div>
 
 
 <!-- tabs start here -->
@@ -191,54 +198,64 @@
         <!-- Grid Layout -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <!-- Grid Items -->
-          <div class="text-white h-48  rounded-lg shadow-md card-1">
+          <div class="text-white h-48  rounded-lg shadow-md card-1 card-style">
             <div class="card-content p-5">
 <h2>Employee Directory</h2>
 <p class="w-38">Learn More About your colleagues and grow your network</p>
-<div class="arrow flex justify-end">
+<div class="arrow flex ">
+  <img src="./Assets/Rectangle.png" class="rectangle" alt="" >
   <img src="./Assets/arrow-small-right.svg" alt="">
+ 
       </div>
             </div>
-            <img src="./Assets/Rectangle.png" class="rectangle" alt="" >
           </div>
-          <div class="text-white  rounded-lg shadow-md card-2">
-            <div class="card-content pr-5 pl-5">
-<h1 class="text-black">New Joiners</h1>
-<p class="text-black w-64">Welcome your new team members 
-  and learn more about them.</p>
-  <div class="arrow flex justify-end">
-    <img src="./Assets/ocean-arrow.svg" alt="">
-        </div>
+          <div class="text-white h-48 rounded-lg shadow-md card-2 card-style flex flex-col justify-end">
+            <div class="card-content p-5 flex justify-between items-center w-full">
+              <div class="text-content">
+                <h2>Employee Directory</h2>
+                <p class="w-38">Learn more about your colleagues and grow your network</p>
+              </div>
+              <div class="arrow">
+                <img src="./Assets/ocean-arrow.svg" alt="Arrow pointing right">
+              </div>
             </div>
           </div>
-          <div class="text-white h-48  rounded-lg shadow-md card-3">
+          
+          <div class="text-white h-48  rounded-lg shadow-md card-3 card-style">
        
        
           </div>
-          <div class="text-white h-48  rounded-lg shadow-md card-4">
+          <div class="text-white h-48  rounded-lg shadow-md card-4 card-style">
             <div class="card-content p-5">
-<h2>Holidays</h2>
-<p class="w-38">Plan your meetings in advance with the help of upcoming holidays.</p>
+              
+<h2>Employee Directory</h2>
+<p class="w-38">Learn More About your colleagues and grow your network</p>
+
+
+
 <div class="arrow flex justify-end">
   <img src="./Assets/arrow-small-right.svg" alt="">
       </div>
+    
             </div>
 
           </div>
-<div class="text-white h-48  rounded-lg shadow-md card-5">
+          <div class="text-white h-48  rounded-lg shadow-md card-5 card-style">
             <div class="card-content p-5">
-<h2>Employee of the Month</h2>
-<p class="w-38">Congratulate your team member for their outstanding performance.</p>
+              
+<h2>Employee Directory</h2>
+<p class="w-38">Learn More About your colleagues and grow your network</p>
+
+
+
 <div class="arrow flex justify-end">
   <img src="./Assets/arrow-small-right.svg" alt="">
       </div>
-  
-      <img src="./Assets/Group 1302.svg" class="element" alt="">
-   
+    
             </div>
-       
+
           </div>
-          <div class="text-white h-48  rounded-lg shadow-md card-6">
+          <div class="text-white h-48  rounded-lg shadow-md card-6 card-style">
             <div class="card-content p-5">
               
 <h2>Employee Directory</h2>
@@ -265,13 +282,13 @@
   <!-- Main Layout -->
  <!-- Dark Mode Toggle Button -->
 
- <div class="flex flex-col md:flex-row gap-6">
+ <div class="flex flex-col md:flex-row gap-6 location-time">
 
   <!-- Main Content (65% on medium and larger screens) -->
   <div class="flex-1 md:basis-[65%] p-6 rounded-lg shadow-lg">
     
       <div class="creative-hub-heading">
-          <h1 class="font-bold">Creative Hub</h1>
+          <h2 class="font-bold">Creative Hub</h2>
       </div>
 
       <!-- Grid Container for Creative Hub -->
@@ -346,52 +363,81 @@
   </div>
 
   <!-- Sidebar (Remaining 35% on medium and larger screens) -->
-  <div class="flex-1 md:basis-[30%] p-6 rounded-lg shadow-lg recent-main">
+  <div class="flex-1 md:basis-[30%]  rounded-lg shadow-lg recent-main">
       <div class="recent">
           <div class="flex justify-between items-center p-2">
-              <h2 class="text-xl font-semibold mb-4">Location & Time</h2>
+            <div class="creative-hub-heading">
+              <h2 class="font-bold mt-3">Location & Time</h2>
+          </div>
           </div>
 
-          <!-- Location Items -->
-          <div class="location flex justify-between items-center">
-              <div>
+  <div class="location-main">
+            <!-- Location Items -->
+            <div class="location flex items-center justify-between w-full">
+              <!-- Left Side: Location Information -->
+              <div class="flex items-center space-x-2">
+                <span class="active-shape"></span>
+                <div>
                   <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
                   <p>CURRENT LOCATION</p>
+                </div>
               </div>
-              <div>
-                  <p>4:21 <span class="font-bold">PM</span></p>
-              </div>
-          </div>
-
-          <div class="location flex justify-between items-center">
-            <div>
-                <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
-                <p>CURRENT LOCATION</p>
-            </div>
-            <div>
+              
+              <!-- Right Side: Time -->
+              <div class="time">
                 <p>4:21 <span class="font-bold">PM</span></p>
+              </div>
             </div>
-        </div>
-
-        <div class="location flex justify-between items-center">
-          <div>
-              <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
-              <p>CURRENT LOCATION</p>
-          </div>
-          <div>
-              <p>4:21 <span class="font-bold">PM</span></p>
-          </div>
-      </div>
-
-      <div class="location flex justify-between items-center">
-        <div>
-            <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
-            <p>CURRENT LOCATION</p>
-        </div>
-        <div>
-            <p>4:21 <span class="font-bold">PM</span></p>
-        </div>
-    </div>
+            
+            <div class="location flex items-center justify-between w-full">
+              <!-- Left Side: Location Information -->
+              <div class="flex items-center space-x-2">
+                <span class="shape"></span>
+                <div>
+                  <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+                  <p>CURRENT LOCATION</p>
+                </div>
+              </div>
+              
+              <!-- Right Side: Time -->
+              <div class="time">
+                <p>4:21 <span class="font-bold">PM</span></p>
+              </div>
+            </div>
+            
+            <div class="location flex items-center justify-between w-full">
+              <!-- Left Side: Location Information -->
+              <div class="flex items-center space-x-2">
+                <span class="shape "></span>
+                <div>
+                  <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+                  <p>CURRENT LOCATION</p>
+                </div>
+              </div>
+              
+              <!-- Right Side: Time -->
+              <div class="time">
+                <p>4:21 <span class="font-bold">PM</span></p>
+              </div>
+            </div>
+            
+            <div class="location flex items-center justify-between w-full">
+              <!-- Left Side: Location Information -->
+              <div class="flex items-center space-x-2">
+                <span class="shape "></span>
+                <div>
+                  <h2 class="font-bold dark-text">SAUDI ARABIA</h2>
+                  <p>CURRENT LOCATION</p>
+                </div>
+              </div>
+              
+              <!-- Right Side: Time -->
+              <div class="time">
+                <p>4:21 <span class="font-bold">PM</span></p>
+              </div>
+            </div>
+            
+  </div>
 
 
           <!-- Add other location items in the same format -->
@@ -416,19 +462,20 @@
         <div class="mt-4">
          
         
-          <div class="news-ann flex">
+          <div class="news-ann flex items-start space-x-4">
+            <!-- Left Side: News Image -->
             <div class="news-img">
-              <img src="./Assets/image (2).png" alt="Image" >
-             </div>
-            
-              <div class="news-content">
-                <h2 class="text-2xl font-semibold text-gray-800">Lorem ipsum dolor sit amet, orum.</h2>
-                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit, sed do eiusmod tempor...</p>
-                <a href="#" class="underline">Read More</a>
-              </div>
+              <img src="./Assets/image (2).png" alt="News Image">
+            </div>
           
+            <!-- Right Side: News Content -->
+            <div class="news-content">
+              <h2 class="text-blue-700 text-lg font-semibold">Lorem ipsum dolor sit amet, orum.</h2>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+              <a href="#" class="text-blue-700 font-medium underline">Read more</a>
+            </div>
           </div>
+          
           
           <div class="news-ann flex">
             <div class="news-img">
@@ -460,12 +507,12 @@
       </div>
 
       <!-- Parent Div 2 -->
-      <div class="text-black rounded-lg p-6 shadow-lg">
+      <div class="text-black rounded-lg p-6 shadow-lg news">
         <h2 class="text-xl font-semibold dark-text">Alat Hub rating</h2>
-        <div class="mt-4">
-         <h4 class="dark-text">How do you rate Atal Hub?</h4>
+        <div class="mb-20">
+         <h4 class="dark-text sub-heading">How do you rate Atal Hub?</h4>
   <!-- Voting Container -->
-  <div class="max-w-4xl mx-auto space-y-4">
+  <div class="max-w-4xl mx-auto space-y-4 my-30">
 
     
     <!-- Voting Options -->
@@ -473,75 +520,75 @@
       <div class="flex items-center space-x-4">
         <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
           <input type="radio" name="voteOption" value="0" class="custom-radio">
-          <span class="text-lg dark-text">Excellent</span>
+          <span class="text-lg dark-text radio-text">Excellent</span>
         </label>
         <div class="flex-1 flex items-center justify-end space-x-4">
           <div class="w-full bg-gray-300 rounded-full h-3 progress">
             <div id="progressBar0" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
           </div>
-          <span id="voteCount0" class="text-lg dark-text">0</span>
+          <span id="voteCount0" class="text-lg dark-text  vote-count">0</span>
         </div>
       </div>
     
       <div class="flex items-center space-x-4">
         <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
           <input type="radio" name="voteOption" value="1" class="custom-radio">
-          <span class="text-lg dark-text">Very Good</span>
+          <span class="text-lg dark-text radio-text">Very Good</span>
         </label>
         <div class="flex-1 flex items-center justify-end space-x-4">
           <div class="w-full bg-gray-300 rounded-full h-3 progress">
             <div id="progressBar1" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
           </div>
-          <span id="voteCount1" class="text-lg dark-text">0</span>
+          <span id="voteCount1" class="text-lg dark-text vote-count">0</span>
         </div>
       </div>
     
       <div class="flex items-center space-x-4">
         <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
           <input type="radio" name="voteOption" value="2" class="custom-radio">
-          <span class="text-lg dark-text">Good</span>
+          <span class="text-lg dark-text radio-text">Good</span>
         </label>
         <div class="flex-1 flex items-center justify-end space-x-4">
           <div class="w-full bg-gray-300 rounded-full h-3 progress">
             <div id="progressBar2" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
           </div>
-          <span id="voteCount2" class="text-lg dark-text">0</span>
+          <span id="voteCount2" class="text-lg dark-text vote-count">0</span>
         </div>
       </div>
     
       <div class="flex items-center space-x-4">
         <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
           <input type="radio" name="voteOption" value="3" class="custom-radio">
-          <span class="text-lg dark-text">Fair</span>
+          <span class="text-lg dark-text radio-text">Fair</span>
         </label>
         <div class="flex-1 flex items-center justify-end space-x-4">
           <div class="w-full bg-gray-300 rounded-full h-3 progress">
             <div id="progressBar3" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
           </div>
-          <span id="voteCount3" class="text-lg dark-text">0</span>
+          <span id="voteCount3" class="text-lg dark-text vote-count">0</span>
         </div>
       </div>
     
       <div class="flex items-center space-x-4">
         <label class="flex items-center space-x-2 w-32 whitespace-nowrap">
           <input type="radio" name="voteOption" value="4" class="custom-radio">
-          <span class="text-lg dark-text">Needs Improvement</span>
+          <span class="text-lg dark-text radio-text">Needs Improvement</span>
         </label>
         <div class="flex-1 flex items-center justify-end space-x-4">
           <div class="w-full bg-gray-300 rounded-full h-3 progress">
             <div id="progressBar4" class="h-3 rounded-full bg-[#09DAC5]" style="width: 0%;"></div>
           </div>
-          <span id="voteCount4" class="text-lg dark-text">0</span>
+          <span id="voteCount4" class="text-lg dark-text vote-count">0</span>
         </div>
       </div>
     </div>
 
     <!-- Vote Button and Total Votes -->
     <div class="flex items-center justify-between mt-4">
-      <button onclick="vote()" class=" text-white px-6 py-2 rounded-md hover:bg-blue-600">Vote</button>
-      <div class="text-lg font-semibold dark-text
+      <button onclick="vote()" class=" text-white px-6 py-2 rounded-md" id="btn">Vote</button>
+      <div class="text-lg font-semibold dark-text underline total-count
       ">
-        Total Votes: <span id="totalVotes dark-text">0</span>
+      <span id="totalVotes dark-text vote-count">0</span> Votes
       </div>
     </div>
   </div>
@@ -550,9 +597,9 @@
       </div>
 
       <!-- section 4 sub section 3 -->
-      <div class=" text-white rounded-lg p-6 shadow-lg support">
-        <h2 class="text-xl font-semibold text-black dark-text">Alat Hub rating</h2>
-        <div class="mt-4">
+      <div class=" text-white rounded-lg p-6 shadow-lg news">
+        <h2 class="text-xl font-semibold text-black dark-text">Support & Help Desk</h2>
+        <div >
           <div class="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-lg support-card">
             <!-- Left side: SVG icon and text -->
             <div class="flex items-center space-x-2">
@@ -630,6 +677,8 @@
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script>
+
+
 $(document).ready(function() {
   // Initialize Slick slider with default settings
   var $slider = $('.your-slider').slick({
@@ -676,9 +725,9 @@ $(document).ready(function() {
       });
     </script>
     <script>
-    document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-    });
+  function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
     function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const toggleButton = document.querySelector('.toggle-button');
